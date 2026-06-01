@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-syne: "Syne", sans-serif;
+  --font-jetbrains: "JetBrains Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0b0e;
+  color: #e8eaf0;
+  font-family: var(--font-syne);
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .grid-bg {
+    background-image: linear-gradient(rgba(79, 142, 247, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(79, 142, 247, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #4f8ef7, #22d3a0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .accent-gradient {
+    background: linear-gradient(135deg, #4f8ef7, #3b73e8);
+  }
+
+  .score-gradient {
+    background: linear-gradient(135deg, #4f8ef7, #22d3a0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
