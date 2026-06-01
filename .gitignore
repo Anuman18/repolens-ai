@@ -1,0 +1,15 @@
+venv/ 
+__pycache__/
+*.pyc 
+.env 
+# Next.js 
+node_modules/ 
+.next/ 
+out/ 
+# macOS 
+.DS_Store 
+# Logs 
+*.log 
+# Build 
+dist/ 
+build/
